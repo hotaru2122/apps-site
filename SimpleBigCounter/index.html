@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SimpleBigCounter for Apple Watch</title>
+  <meta name="description" content="SimpleBigCounter is a simple and easy-to-read counter app for Apple Watch." />
+  <style>
+    :root {
+      --bg: #0b0b0f;
+      --card: #17181d;
+      --line: #2a2d35;
+      --text: #f5f7fb;
+      --muted: #b4bac7;
+      --accent: #2f95ff;
+      --accent2: #8b5cf6;
+      --max: 1080px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at top, #161926 0%, var(--bg) 48%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: #8ec5ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 24px; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 32px;
+      align-items: center;
+      padding: 52px 0 28px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 14px;
+      background: rgba(255,255,255,.04);
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(38px, 6vw, 62px);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+    }
+    .lead {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 60ch;
+      margin: 0 0 20px;
+    }
+    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: #1e2129;
+      color: var(--text);
+      font-weight: 600;
+    }
+    .btn.primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border: none;
+    }
+    .hero-card {
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 28px;
+      padding: 18px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+    }
+    .hero-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 24px;
+      background: #000;
+    }
+    section { padding: 26px 0; }
+    h2 {
+      font-size: 28px;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    .section-lead { color: var(--muted); margin: 0 0 20px; }
+    .grid3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+    }
+    .card h3 { margin-top: 0; margin-bottom: 8px; }
+    .muted { color: var(--muted); }
+    .shots {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    figure {
+      margin: 0;
+      background: #101216;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 10px;
+    }
+    figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 18px;
+      display: block;
+      background: #000;
+    }
+    figcaption {
+      font-size: 14px;
+      color: var(--muted);
+      padding: 10px 6px 2px;
+      text-align: center;
+    }
+    .support {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    footer {
+      border-top: 1px solid rgba(255,255,255,.08);
+      margin-top: 28px;
+      padding: 24px 0 48px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    code.inline {
+      background: rgba(255,255,255,.06);
+      padding: 2px 8px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,.08);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      color: #fff;
+    }
+    @media (max-width: 920px) {
+      .hero, .support, .grid3 { grid-template-columns: 1fr; }
+      .shots { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .wrap { padding: 18px; }
+      .shots { grid-template-columns: 1fr; }
+      .cta-row { flex-direction: column; }
+      .btn { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <div class="badge">Apple Watch Counter App</div>
+        <h1>SimpleBigCounter</h1>
+        <p class="lead">
+          Apple Watchで素早く見やすく数えられる、シンプルなカウンターアプリです。<br>
+          A clean, easy-to-read counter app designed for quick use on Apple Watch.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#support">Support</a>
+          <a class="btn" href="#screenshots">Screenshots</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="assets/blue.png" alt="SimpleBigCounter blue theme screenshot" />
+      </div>
+    </section>
+
+    <section>
+      <h2>Features</h2>
+      <p class="section-lead">最小限の操作で、必要なことだけをすぐ使える構成です。</p>
+      <div class="grid3">
+        <div class="card">
+          <h3>Large, readable count</h3>
+          <p class="muted">大きな数字表示で、ひと目で現在のカウントを確認できます。</p>
+        </div>
+        <div class="card">
+          <h3>Theme colors</h3>
+          <p class="muted">Blue / Green / Orange / Pink / Purple / Mono から好きな表示色を選べます。</p>
+        </div>
+        <div class="card">
+          <h3>Simple controls</h3>
+          <p class="muted">増減・リセット・設定にすぐアクセスできる、シンプルな操作設計です。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="screenshots">
+      <h2>Screenshots</h2>
+      <p class="section-lead">アプリ画面の例です。色テーマや設定画面を確認できます。</p>
+      <div class="shots">
+        <figure><img src="assets/blue.png" alt="Blue theme" /><figcaption>Blue</figcaption></figure>
+        <figure><img src="assets/green.png" alt="Green theme" /><figcaption>Green</figcaption></figure>
+        <figure><img src="assets/orange.png" alt="Orange theme" /><figcaption>Orange</figcaption></figure>
+        <figure><img src="assets/pink.png" alt="Pink theme" /><figcaption>Pink</figcaption></figure>
+        <figure><img src="assets/purple.png" alt="Purple theme" /><figcaption>Purple</figcaption></figure>
+        <figure><img src="assets/mono23.png" alt="Mono theme" /><figcaption>Mono</figcaption></figure>
+        <figure><img src="assets/settings1.png" alt="Settings screen 1" /><figcaption>Settings</figcaption></figure>
+        <figure><img src="assets/settings2.png" alt="Settings screen 2" /><figcaption>More colors</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="support">
+      <h2>Support</h2>
+      <p class="section-lead">お問い合わせ先とアプリ情報です。</p>
+      <div class="support">
+        <div class="card">
+          <h3>Contact / お問い合わせ</h3>
+          <p>ご質問・不具合報告は以下までご連絡ください。</p>
+          <p><strong>Email:</strong> <a href="mailto:naoki_hotta_dev@icloud.com">naoki_hotta_dev@icloud.com</a></p>
+        </div>
+        <div class="card">
+          <h3>App information</h3>
+          <p><strong>App name:</strong> SimpleBigCounter</p>
+          <p><strong>Platform:</strong> Apple Watch / watchOS</p>
+          <p><strong>Category:</strong> Utilities</p>
+          <p><strong>Support language:</strong> Japanese, English</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Privacy</h2>
+      <div class="card">
+        <p>Privacy Policy: <a href="privacy.html">privacy.html</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© 2026 SimpleBigCounter</div>
+      <div>Contact: <code class="inline">naoki_hotta_dev@icloud.com</code></div>
+    </footer>
+  </div>
+</body>
+</html>

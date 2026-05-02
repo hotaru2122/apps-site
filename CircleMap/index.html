@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CircleMap | 地図に半径円を描いて距離感をつかむアプリ</title>
+    <meta
+      name="description"
+      content="CircleMapは、地図上にピンと半径円を配置して、目的地や現在地からの距離感を視覚的に把握できるiPhoneアプリです。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="./index.html">CircleMap</a>
+        <nav class="nav-links" aria-label="主要リンク">
+          <a href="#features">特長 / Features</a>
+          <a href="#screenshots">スクリーンショット / Screenshots</a>
+          <a href="./privacy.html">プライバシーポリシー / Privacy Policy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Radius Map Tool</p>
+            <h1>CircleMap</h1>
+            <p class="lead">
+              地図上にピンと半径円を置いて、現在地や目的地からの距離感をひと目で確認できます。
+              100m、300m、1kmなどの範囲を視覚化したいときに使えるシンプルな地図アプリです。
+              <span class="en-block">
+                CircleMap helps you place pins and radius circles on a map so distances around your current location,
+                destination, or saved places are easy to understand at a glance.
+              </span>
+            </p>
+            <div class="cta-row">
+              <a class="button primary" href="#screenshots">画面を見る / View Screens</a>
+              <a class="button secondary" href="./privacy.html">プライバシーポリシー / Privacy Policy</a>
+            </div>
+            <ul class="quick-points">
+              <li>現在地や検索した場所を中心にピンを追加 / Add pins from your location or search results</li>
+              <li>半径円の追加・編集・削除に対応 / Add, edit, and delete radius circles</li>
+              <li>作成したピンと円は端末内に保存 / Pins and circles are stored on your device</li>
+            </ul>
+          </div>
+
+          <div class="phone-stage" aria-hidden="true">
+            <figure class="phone back">
+              <img src="./assets/search.jpg" alt="" />
+            </figure>
+            <figure class="phone front">
+              <img src="./assets/overview.jpg" alt="" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="features">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Features</p>
+            <h2>距離の感覚を、地図の上で扱いやすく。</h2>
+            <p class="section-copy">
+              場所を探す、ピンを置く、半径を描く、あとから整理する。距離確認に必要な操作を地図画面からすぐ使えます。
+              <span class="en-block">
+                Search a place, add a pin, draw radius circles, and manage them later from a focused map interface.
+              </span>
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>場所検索とピン追加 <span class="en-inline">Search and pin places</span></h3>
+              <p>
+                住所、施設名、場所名で検索して、見つけた地点へ移動したりピンとして保存したりできます。
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>半径円を視覚化 <span class="en-inline">Visual radius circles</span></h3>
+              <p>
+                ピンを中心に複数の半径円を重ねられます。徒歩圏、集合範囲、周辺確認などの目安作りに使えます。
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>地図モード切り替え <span class="en-inline">Map style switching</span></h3>
+              <p>
+                詳細マップと航空写真を切り替えて、街区や地形を確認しながら円の範囲を調整できます。
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>長押しで追加 <span class="en-inline">Long-press to add</span></h3>
+              <p>
+                地図上の任意の場所を長押しして、検索を使わずにその場へピンを追加できます。
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>ピンと円の管理 <span class="en-inline">Manage pins and circles</span></h3>
+              <p>
+                作成済みのピンや円を一覧から確認し、名前、メモ、半径、色をあとから編集できます。
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>端末内保存 <span class="en-inline">On-device storage</span></h3>
+              <p>
+                作成したピンと円の情報は端末内に保存されます。外部サーバーへの送信は行いません。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="screenshots">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Screenshots</p>
+            <h2>アプリ画面 <span class="en-inline">App Screens</span></h2>
+            <p class="section-copy">
+              地図表示、検索、ピン詳細、円の追加、管理画面、設定画面の例です。
+            </p>
+          </div>
+
+          <div class="gallery">
+            <figure class="shot-card">
+              <img src="./assets/overview.jpg" alt="地図上にピンと半径円を表示しているCircleMapのメイン画面" />
+              <figcaption>地図と半径円 / Map and circles</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <img src="./assets/search.jpg" alt="場所検索の候補を表示している画面" />
+              <figcaption>場所検索 / Place search</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <img src="./assets/pin-detail.jpg" alt="ピン詳細カードと半径円の操作画面" />
+              <figcaption>ピン詳細 / Pin details</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <img src="./assets/circle-add.jpg" alt="半径円を追加する画面" />
+              <figcaption>円の追加 / Add circles</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <img src="./assets/manage.jpg" alt="ピンと円の管理画面" />
+              <figcaption>管理画面 / Manage data</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <img src="./assets/map-mode.jpg" alt="地図モードを選択する画面" />
+              <figcaption>地図モード / Map styles</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <img src="./assets/settings.jpg" alt="円の表示設定画面" />
+              <figcaption>表示設定 / Display settings</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <img src="./assets/tutorial.jpg" alt="初回チュートリアル画面" />
+              <figcaption>チュートリアル / Tutorial</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container info-row">
+          <div>
+            <p class="eyebrow">Privacy</p>
+            <h2>位置情報は、地図表示のために使用します。</h2>
+            <p class="section-copy">
+              CircleMap は現在地表示や現在地を中心にした初期ピン作成のために位置情報を使用します。
+              作成したピンと円は端末内に保存され、開発者の外部サーバーへ送信されません。
+            </p>
+            <p class="contact-line">
+              お問い合わせ / Contact: <a href="mailto:naoki_hotta_dev@icloud.com">naoki_hotta_dev@icloud.com</a>
+            </p>
+          </div>
+          <a class="button primary" href="./privacy.html">Privacy Policy</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© 2026 CircleMap</p>
+        <div class="footer-links">
+          <a href="./index.html">紹介ページ / About</a>
+          <a href="./privacy.html">プライバシーポリシー / Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
