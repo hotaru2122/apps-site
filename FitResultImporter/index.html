@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitResultImporter | フィットネスゲームのリザルトをヘルスケアへ</title>
+    <meta
+      name="description"
+      content="FitResultImporterは、リングフィットやFit Boxingなどのリザルト画面から運動時間と消費カロリーを読み取り、確認後にAppleヘルスケアへワークアウトとして保存するiPhoneアプリです。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="./index.html">FitResultImporter</a>
+        <nav class="nav-links" aria-label="主要リンク">
+          <a href="#features">特長 / Features</a>
+          <a href="#screenshots">スクリーンショット / Screenshots</a>
+          <a href="./privacy.html">プライバシーポリシー / Privacy Policy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Fitness Game Result Importer</p>
+            <h1>
+              <span class="hero-line">リザルト画面を、</span>
+              <span class="hero-line">ヘルスケアの</span>
+              <span class="hero-line">ワークアウトへ。</span>
+            </h1>
+            <p class="hero-subtitle">Turn fitness game result screens into Apple Health workouts after review.</p>
+            <p class="lead">
+              <strong>FitResultImporter</strong> は、リングフィットやFit Boxingなどのリザルト画面を撮影し、
+              運動時間と消費カロリーを読み取って、確認・修正後にAppleヘルスケアへ保存するiPhoneアプリです。
+              <span class="en-block">
+                Capture or select a result screen, review the detected duration and active calories, then save it as a
+                workout in Apple Health.
+              </span>
+            </p>
+            <div class="cta-row">
+              <a class="button primary" href="#screenshots">画面を見る / View Screens</a>
+              <a class="button secondary" href="./privacy.html">プライバシーポリシー / Privacy Policy</a>
+            </div>
+
+            <ul class="quick-points">
+              <li>カメラ撮影・写真選択から取り込み / Import from camera or photos</li>
+              <li>オンデバイスでOCR・解析 / On-device OCR and analysis</li>
+              <li>保存前に必ず確認・手修正 / Review and edit before saving</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="phone-stack">
+              <figure class="phone-card phone-card-back">
+                <img
+                  src="./Simulator%20Screenshot%20-%20iPhone%20Air%20-%202026-06-07%20at%2018.37.49.png"
+                  alt=""
+                />
+              </figure>
+              <figure class="phone-card phone-card-front">
+                <img
+                  src="./Simulator%20Screenshot%20-%20iPhone%20Air%20-%202026-06-07%20at%2018.36.21.png"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-strip">
+        <div class="container feature-strip-grid">
+          <article>
+            <p class="feature-label">Capture / Select</p>
+            <h2>いつものリザルト画面から <span class="en-inline">Start with the result screen you already have.</span></h2>
+            <p>
+              ゲーム終了後の結果画面をカメラで撮るか、写真ライブラリから選択して取り込みます。
+              <span class="en-block">Use the camera or choose an existing screenshot/photo from your library.</span>
+            </p>
+          </article>
+          <article>
+            <p class="feature-label">On Device</p>
+            <h2>解析は端末内で完結 <span class="en-inline">Analysis runs on the device.</span></h2>
+            <p>
+              Vision OCRとオンデバイス解析で、運動時間と消費カロリーを読み取ります。
+              <span class="en-block">Vision OCR and local analysis extract workout duration and active calories.</span>
+            </p>
+          </article>
+          <article>
+            <p class="feature-label">HealthKit</p>
+            <h2>確認してから保存 <span class="en-inline">Review first, then save.</span></h2>
+            <p>
+              読み取り結果をそのまま保存せず、内容を確認・修正してからHealthKitへ登録します。
+              <span class="en-block">Detected values are shown for review and editing before they are written to HealthKit.</span>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Features</p>
+            <h2>運動記録を残しやすくするための機能 <span class="en-inline">Features for cleaner workout logging.</span></h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>運動時間と消費カロリーを読み取り <span class="en-inline">Duration and calories</span></h3>
+              <p>
+                リザルト画面内の運動時間と消費カロリーを読み取り、ワークアウト登録に必要な値として整理します。
+                <span class="en-block">Extracts the core values needed to create a workout record.</span>
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>手修正に対応 <span class="en-inline">Manual correction</span></h3>
+              <p>
+                画像が見づらい場合や読み取りがずれた場合でも、保存前に日時、運動時間、消費カロリー、ゲーム名を直せます。
+                <span class="en-block">Edit the date, duration, calories, and game title before saving.</span>
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>HealthKitへワークアウト保存 <span class="en-inline">Workout save to HealthKit</span></h3>
+              <p>
+                単なるカロリー記録ではなく、フィットネスゲームのワークアウトとしてAppleヘルスケアへ保存します。
+                <span class="en-block">Saves entries as fitness gaming workouts, not just calorie-only records.</span>
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>履歴と重複確認 <span class="en-inline">History and duplicate checks</span></h3>
+              <p>
+                登録済みの取り込み履歴をアプリ内で確認できます。似た記録がある場合は、重複登録を避けやすくします。
+                <span class="en-block">Review imported workouts and reduce accidental duplicate saves.</span>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="screenshots">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Screenshots</p>
+            <h2>アプリ画面 <span class="en-inline">App Screens</span></h2>
+            <p class="section-copy">
+              使い方、取り込み、解析結果確認、履歴、設定画面をそのまま掲載しています。
+              <span class="en-block">The gallery shows onboarding, import, review, history, and settings screens.</span>
+            </p>
+          </div>
+
+          <div class="gallery">
+            <figure class="shot-card">
+              <img
+                src="./Simulator%20Screenshot%20-%20iPhone%20Air%20-%202026-06-07%20at%2018.36.21.png"
+                alt="リザルト取り込みの使い方画面"
+              />
+              <figcaption>使い方ガイド / How it works</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <img
+                src="./Simulator%20Screenshot%20-%20iPhone%20Air%20-%202026-06-07%20at%2018.37.41.png"
+                alt="リザルト画像を取り込む画面"
+              />
+              <figcaption>取り込み画面 / Import</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <img
+                src="./Simulator%20Screenshot%20-%20iPhone%20Air%20-%202026-06-07%20at%2018.37.44.png"
+                alt="解析結果を確認してヘルスケアへ保存する画面"
+              />
+              <figcaption>確認画面 / Review</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <img
+                src="./Simulator%20Screenshot%20-%20iPhone%20Air%20-%202026-06-07%20at%2018.37.49.png"
+                alt="登録済みワークアウトの詳細画面"
+              />
+              <figcaption>登録詳細 / Saved detail</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container callout">
+          <div>
+            <p class="eyebrow">Privacy</p>
+            <h2>
+              画像とヘルスケア情報の扱いを明確にしています
+              <span class="en-inline">Clear handling of images and Health data.</span>
+            </h2>
+            <p>
+              本アプリは、リザルト画像の読み取りとHealthKit保存のために必要な権限のみを使用します。
+              解析目的で画像やヘルスケア情報を開発者の外部サーバーへ送信しません。
+              <span class="en-block">
+                The app uses only the permissions needed for result import and HealthKit saving, and does not send images
+                or Health data to the developer's external servers for analysis.
+              </span>
+            </p>
+            <p class="contact-line">
+              お問い合わせ / Contact: <a href="mailto:naoki_hotta_dev@icloud.com">naoki_hotta_dev@icloud.com</a>
+            </p>
+          </div>
+          <a class="button primary" href="./privacy.html">プライバシーポリシーを見る / View Privacy Policy</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© FitResultImporter</p>
+        <div class="footer-links">
+          <a href="./index.html">紹介ページ / About</a>
+          <a href="./privacy.html">プライバシーポリシー / Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
