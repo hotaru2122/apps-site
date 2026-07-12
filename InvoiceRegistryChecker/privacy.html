@@ -8,12 +8,13 @@
       name="description"
       content="登録番号検索くんのプライバシーポリシー。カメラ、写真、OCR、登録番号検索、履歴、サーバー送信の取り扱いについて説明します。"
     />
+    <link rel="stylesheet" href="../language.css" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav">
-        <a class="brand" href="./index.html">登録番号検索くん</a>
+        <a class="brand" href="./index.html" data-i18n="invoice.name">登録番号検索くん</a>
         <nav class="nav-links" aria-label="主要リンク">
           <a href="./index.html">サポート / Support</a>
           <a href="./privacy.html" aria-current="page">プライバシーポリシー / Privacy Policy</a>
@@ -34,7 +35,7 @@
               to provide the App's features. This policy explains what information is used and how it is handled.
             </span>
           </p>
-          <p class="policy-date">最終更新日 / Last Updated: 2026年5月16日 / May 16, 2026</p>
+          <p class="policy-date" data-i18n="invoice.privacy.date">最終更新日: 2026年5月16日</p>
         </div>
       </section>
 
@@ -154,12 +155,13 @@
 
     <footer class="site-footer">
       <div class="container footer-row">
-        <p>© 2026 登録番号検索くん</p>
+        <p>© 2026 <span data-i18n="invoice.name">登録番号検索くん</span></p>
         <div class="footer-links">
           <a href="./index.html">サポート / Support</a>
           <a href="./privacy.html">プライバシーポリシー / Privacy Policy</a>
         </div>
       </div>
     </footer>
+    <script src="../language.js"></script>
   </body>
 </html>

@@ -8,6 +8,7 @@
       name="description"
       content="CircleMapは、地図上にピンと半径円を配置して、目的地や現在地からの距離感を視覚的に把握できるiPhoneアプリです。"
     />
+    <link rel="stylesheet" href="../language.css" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -62,7 +63,7 @@
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Features</p>
-            <h2>距離の感覚を、地図の上で扱いやすく。</h2>
+            <h2 data-i18n="circle.features.title">距離の感覚を、地図の上で扱いやすく。</h2>
             <p class="section-copy">
               場所を探す、ピンを置く、半径を描く、あとから整理する。距離確認に必要な操作を地図画面からすぐ使えます。
               <span class="en-block">
@@ -74,37 +75,37 @@
           <div class="feature-grid">
             <article class="feature-card">
               <h3>場所検索とピン追加 <span class="en-inline">Search and pin places</span></h3>
-              <p>
+              <p data-i18n="circle.feature.search">
                 住所、施設名、場所名で検索して、見つけた地点へ移動したりピンとして保存したりできます。
               </p>
             </article>
             <article class="feature-card">
               <h3>半径円を視覚化 <span class="en-inline">Visual radius circles</span></h3>
-              <p>
+              <p data-i18n="circle.feature.radius">
                 ピンを中心に複数の半径円を重ねられます。徒歩圏、集合範囲、周辺確認などの目安作りに使えます。
               </p>
             </article>
             <article class="feature-card">
               <h3>地図モード切り替え <span class="en-inline">Map style switching</span></h3>
-              <p>
+              <p data-i18n="circle.feature.map">
                 詳細マップと航空写真を切り替えて、街区や地形を確認しながら円の範囲を調整できます。
               </p>
             </article>
             <article class="feature-card">
               <h3>長押しで追加 <span class="en-inline">Long-press to add</span></h3>
-              <p>
+              <p data-i18n="circle.feature.longpress">
                 地図上の任意の場所を長押しして、検索を使わずにその場へピンを追加できます。
               </p>
             </article>
             <article class="feature-card">
               <h3>ピンと円の管理 <span class="en-inline">Manage pins and circles</span></h3>
-              <p>
+              <p data-i18n="circle.feature.manage">
                 作成済みのピンや円を一覧から確認し、名前、メモ、半径、色をあとから編集できます。
               </p>
             </article>
             <article class="feature-card">
               <h3>端末内保存 <span class="en-inline">On-device storage</span></h3>
-              <p>
+              <p data-i18n="circle.feature.storage">
                 作成したピンと円の情報は端末内に保存されます。外部サーバーへの送信は行いません。
               </p>
             </article>
@@ -117,7 +118,7 @@
           <div class="section-heading">
             <p class="eyebrow">Screenshots</p>
             <h2>アプリ画面 <span class="en-inline">App Screens</span></h2>
-            <p class="section-copy">
+            <p class="section-copy" data-i18n="circle.screens.copy">
               地図表示、検索、ピン詳細、円の追加、管理画面、設定画面の例です。
             </p>
           </div>
@@ -163,8 +164,8 @@
         <div class="container info-row">
           <div>
             <p class="eyebrow">Privacy</p>
-            <h2>位置情報は、地図表示のために使用します。</h2>
-            <p class="section-copy">
+            <h2 data-i18n="circle.privacy.title">位置情報は、地図表示のために使用します。</h2>
+            <p class="section-copy" data-i18n="circle.privacy.copy">
               CircleMap は現在地表示や現在地を中心にした初期ピン作成のために位置情報を使用します。
               作成したピンと円は端末内に保存され、開発者の外部サーバーへ送信されません。
             </p>
@@ -186,5 +187,6 @@
         </div>
       </div>
     </footer>
+    <script src="../language.js"></script>
   </body>
 </html>
