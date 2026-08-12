@@ -15,6 +15,11 @@
       ja: "公開中アプリの紹介ページとプライバシーポリシーをまとめています。",
       en: "Explore the apps by Naoki Hotta, along with support and privacy information.",
     },
+    "kanji.name": { ja: "漢字書き取り", en: "Kanji Kakitori" },
+    "home.kanji.description": {
+      ja: "漢検2級相当の200字を、1回5問から手書き練習。自動採点、苦手復習、筆順の再生に対応した学習アプリです。",
+      en: "Practice 200 kanji at the Kanji Kentei Level 2 equivalent in five-question sessions, with automatic scoring, focused review, and stroke replay.",
+    },
     "home.pdf.description": {
       ja: "PDFチケットやチケット画像を保存し、当日に必要なチケットを起動直後に表示できるiPhone/iPadアプリです。",
       en: "An iPhone and iPad app that keeps PDF and image tickets ready to show as soon as you open it.",
@@ -165,6 +170,14 @@
       ja: ["CircleMap | 地図に半径円を描いて距離感をつかむアプリ", "CircleMapは、地図上にピンと半径円を配置して距離感を視覚的に把握できるiPhoneアプリです。"],
       en: ["CircleMap | Visualize distance with radius circles", "CircleMap is an iPhone app for placing pins and radius circles on a map to understand distance visually."],
     },
+    "/KanjiKakitori": {
+      ja: ["漢字書き取り | 手書きで練習する漢字学習アプリ", "漢検2級相当の200字を手書きで練習。自動採点、苦手復習、なぞり練習、筆順再生に対応した学習アプリです。"],
+      en: ["Kanji Kakitori | Handwriting practice for Japanese kanji", "Practice 200 kanji at the Kanji Kentei Level 2 equivalent with handwriting, automatic scoring, focused review, tracing, and stroke replay."],
+    },
+    "/KanjiKakitori/privacy.html": {
+      ja: ["プライバシーポリシー | 漢字書き取り", "漢字書き取りのプライバシーポリシーです。学習記録と筆跡の取り扱いを説明します。"],
+      en: ["Privacy Policy | Kanji Kakitori", "Privacy policy for Kanji Kakitori, including how learning progress and handwriting records are handled."],
+    },
     "/CircleMap/privacy.html": {
       ja: ["プライバシーポリシー | CircleMap", "CircleMapのプライバシーポリシーです。"],
       en: ["Privacy Policy | CircleMap", "Privacy policy for CircleMap."],
@@ -214,6 +227,7 @@
   function normalizePathname() {
     let path = window.location.pathname.replace(/\/index\.html$/, "").replace(/\/$/, "");
     const pageRoots = [
+      "/KanjiKakitori",
       "/CircleMap",
       "/CountdownCalendar",
       "/FitResultImporter",
