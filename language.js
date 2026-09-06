@@ -118,7 +118,7 @@
       en: "Save looked-up registration numbers and results on your device for later review.",
     },
     "circle.privacy.date": { ja: "最終更新日: 2026年5月2日", en: "Last Updated: May 2, 2026" },
-    "countdown.privacy.date": { ja: "最終更新日: 2026年4月19日", en: "Last Updated: April 19, 2026" },
+    "countdown.privacy.date": { ja: "最終更新日: 2026年9月5日", en: "Last Updated: September 5, 2026" },
     "fit.privacy.date": { ja: "最終更新日: 2026年6月7日", en: "Last Updated: June 7, 2026" },
     "invoice.privacy.date": { ja: "最終更新日: 2026年5月16日", en: "Last Updated: May 16, 2026" },
     "counter.features.title": { ja: "特長", en: "Features" },
@@ -187,8 +187,8 @@
       en: ["Countdown | Calendar countdown widgets", "A widget-first countdown app that connects to Apple Calendar."],
     },
     "/CountdownCalendar/privacy.html": {
-      ja: ["プライバシーポリシー | あと何日？", "あと何日？のプライバシーポリシーです。"],
-      en: ["Privacy Policy | Countdown", "Privacy policy for Countdown."],
+      ja: ["プライバシーポリシー | あと何日？", "あと何日？のプライバシーポリシーです。カレンダー情報とWidget Push用情報の取り扱いを説明します。"],
+      en: ["Privacy Policy | Countdown", "Privacy policy for Countdown, including how calendar information and Widget Push data are handled."],
     },
     "/FitResultImporter": {
       ja: ["FitResultImporter | フィットネスゲームのリザルトをヘルスケアへ", "フィットネスゲームのリザルトをAppleヘルスケアへ保存するアプリです。"],
